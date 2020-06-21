@@ -705,7 +705,7 @@ footer {
   height: 30px;
 }
 
-/* media for small screen */
+/* media for desktop screen */
 @media screen and (min-width: 576px) {
   main {
     max-width: 1440px;
