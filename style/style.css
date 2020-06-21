@@ -44,13 +44,14 @@ img {
   background: #29ac09;
 }
 main {
-  max-width: 360px;
+  max-width: 375px;
   margin: 0 auto;
   overflow-x: hidden;
 }
 /* header styling for mobile view */
 header {
-  width: 100%;
+  width: fit-content;
+  /* margin-left: 50px; */
 }
 .hd-mn {
   display: flex;
@@ -94,6 +95,9 @@ header {
 .btn-gp .btn-blank {
   border: 0.5px solid #fff;
   background: transparent;
+}
+.btn-gp .btn-1 {
+  display: none;
 }
 /* styling for the banner section */
 .banner {
@@ -624,10 +628,7 @@ header {
   text-align: center;
   padding: 10px;
 }
-.sub form {
-  /* display: flex;
-  flex-direction: column; */
-}
+
 .sub form input {
   width: 200px;
   padding: 10px;
@@ -707,7 +708,7 @@ footer {
 /* media for small screen */
 @media screen and (min-width: 576px) {
   main {
-    max-width: 1300px;
+    max-width: 1440px;
     margin: 0 auto;
   }
   .hd-mn {
@@ -724,12 +725,15 @@ footer {
   .btn-gp {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 350px;
     flex-wrap: wrap;
   }
   .btn-gp .btn {
     width: 150px;
+  }
+  .btn-gp .btn-1 {
+    display: inline-block;
   }
   .banner {
     flex: 1 0 auto;
@@ -880,9 +884,6 @@ footer {
   }
   .rhomb {
     position: absolute;
-    /* margin-top: -200px;
-    margin-left: 610px; */
-    /* display: none; */
     right: 47.5%;
   }
   .article-cards {
@@ -956,10 +957,109 @@ footer {
     margin-top: 200px;
   }
 }
+/* tablet view */
 @media screen and (max-width: 776px) {
   .article-cards .crd {
     height: 450px;
     flex: 0 0 calc(50% - 20px);
     margin: 10px;
+  }
+  .client {
+    height: auto;
+  }
+  .client h2 {
+    padding-top: 5px;
+    margin: 5px;
+  }
+  .client img {
+    width: 100px;
+    height: 70px;
+    margin: 15px;
+  }
+  .quote {
+    height: auto;
+    padding: 30px 0 30px 0;
+  }
+  .quote .tp-q {
+    position: relative;
+    left: -31%;
+    top: 10%;
+  }
+  .quote .btm-q {
+    position: relative;
+    right: -18%;
+    top: 20%;
+  }
+  .job-list {
+  }
+  .job-list h2 {
+    /* margin-left: 140px; */
+    line-height: 1.5;
+  }
+  .job-list .list-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .list-cards .jd-crd {
+    width: 350px;
+    height: 157px;
+    flex: 0 0 calc;
+    flex: 1 1 calc(25% - 10px);
+    /* margin-left: -5px; */
+  }
+  /* .join-us .jn-top h3 {
+    font-size: 20px;
+    width: 260px;
+  }
+  .join-us-btm .count p {
+    margin: 25px;
+    font-size: 15px;
+  }
+  .join-us-btm .count p span {
+    font-weight: 400;
+    line-height: 70px;
+  } */
+  .offer-actn .right .back {
+    height: 350px;
+  }
+  .back p {
+    width: 280px;
+  }
+  .left {
+    padding-top: 30px;
+  }
+  .left .rhomb {
+    position: absolute;
+    right: 45%;
+  }
+  .left .btn {
+    border-radius: 5px;
+    padding: 13px;
+  }
+  .left p {
+    line-height: 1.7;
+    margin-left: 0;
+  }
+  .testmonial .test-card .tst-crd-in {
+    height: auto;
+  }
+  .sub h3 {
+    font-size: 15px;
+    line-height: 1;
+    margin-left: 10px;
+  }
+  .sub form {
+    margin-right: 10px;
+  }
+  .sub form input {
+    width: 200px;
+  }
+  .faq {
+    padding: 10px;
+  }
+  .faq h2 {
+    line-height: 0.1;
+    font-size: 22px;
   }
 }
