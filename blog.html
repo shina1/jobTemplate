@@ -9,21 +9,54 @@
   </head>
   <body>
     <main class="blg-mn">
-      <header>
-        <div class="hd-mn-blg">
-          <div class="logo"><img src="img/logog.png" alt="Joby" /></div>
-          <div class="url-link">
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact Us</a></li>
-              </ul>
-            </nav>
+      <nav>
+        <div class="container">
+          <div class="flex">
+            <div class="img-wrapper">
+              <img src="img/joby.png" width="200px" alt="logo" />
+            </div>
+
+            <button class="hamburger" id="hamburger">
+              <img
+                class="open"
+                src="img/icon-hamburger.svg"
+                alt="icon-hamburger"
+              />
+              <img class="close" src="img/icon-close.svg" alt="icon-close " />
+            </button>
+
+            <ul id="menu">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <a href="#">Jobs</a>
+              </li>
+              <li>
+                <a href="#">Categories</a>
+              </li>
+              <li class="btn-nw btn-primary">
+                <a href="#">Sign up</a>
+              </li>
+              <li class="btn-nw btn-secondary">
+                <a href="#">Login</a>
+              </li>
+            </ul>
           </div>
-          <div class="btn-gp">
-            <button class="btn btn-fill btn-1">Sign Up</button>
-            <button class="btn .btn-blank-blg">Login</button>
+        </div>
+      </nav>
+
+      <header>
+        <div class="container">
+          <div class="flex align-start reverse-mobile">
+            <div>
+              <h1>Contact Us.</h1>
+              <a class="nav-link link" href="#">Home</a> >
+              <span class="nav-link">Contact</span>
+            </div>
           </div>
         </div>
       </header>
@@ -206,5 +239,6 @@
         </div>
       </footer>
     </main>
+    <script src="js/main.js"></script>
   </body>
 </html>
